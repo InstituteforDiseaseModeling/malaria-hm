@@ -1,0 +1,12 @@
+For others:
+
+where are default Garki input files (as in those referenced in the Regression Malaria Garki-02?
+
+For Dan:
+
+-how do I run my first set of sims that is used as the exp_id for the iter0?
+-can I just run one iter of OptimTool where the list of params is the same as my Params.xlsx and I make a guess within the same range?
+-Why does it ask me for a key to open a Jupyter notebook?
+- What is pickling?
+
+
