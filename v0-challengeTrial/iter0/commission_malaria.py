@@ -5,6 +5,8 @@ import pandas as pd
 from pyDOE import lhs
 import numpy as np
 
+from simtools.SetupParser import SetupParser
+from simtools.ExperimentManager.ExperimentManagerFactory import ExperimentManagerFactory
 from dtk.utils.core.DTKConfigBuilder import DTKConfigBuilder
 from simtools.ModBuilder import ModBuilder, ModFn
 from dtk.utils.builders.TemplateHelper import TemplateHelper
@@ -16,7 +18,7 @@ from malaria.reports.MalariaReport import add_patient_report
 
 iteration = int(re.search(r'iter(\d+)', os.getcwd()).group(1))
 N_rep_per_sample = 1
-N_samples = 10
+N_samples = 4
 
 params = quick_read( os.path.join('..', 'Params.xlsx'), 'Params').set_index('Name')
 
@@ -116,5 +118,15 @@ exp_builder = ModBuilder.from_combos(
 
 run_sim_args =  {'config_builder': config_builder,
                  'exp_builder': exp_builder,
-                 'exp_name': 'Malaria Challenge test Iter%d'%iteration}
+                 'exp_name': 'Malaria Challenge fixedGam Iter%d'%iteration}
 
+if __name__ == "__main__":
+
+    if not SetupParser.initialized:
+        SetupParser.init('HPC')
+
+
+    exp_manager = ExperimentManagerFactory.init()
+    exp_manager.run_simulations(**run_sim_args)
+    exp_manager.wait_for_finished(verbose=True)
+    assert (exp_manager.succeeded())

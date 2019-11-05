@@ -1,0 +1,51 @@
+{
+    "Basis": {
+        "Terms": [
+            "Intercept",
+            "Biological_Age_Immune_Coefficient_PPP",
+            "Scale_Factor_Age_b",
+            "Scale_Factor_Free_Interval_a",
+            "Recent_Exposure_Immune_Coefficient_PPP * Scale_Factor_Age_a",
+            "Recent_Exposure_Immune_Coefficient_TM * Wave_Vs_Infection_Relative_Weight",
+            "Scale_Factor_Free_Interval_a * Wave_Vs_Infection_Relative_Weight"
+        ],
+        "Param_Dict": {
+            "Sample": "Sample",
+            "Gametocyte_Conversion_Draw_Mean": "Gametocyte_Conversion_Draw_Mean",
+            "Gametocyte_Conversion_Draw_Std_Dev": "Gametocyte_Conversion_Draw_Std_Dev",
+            "Biological_Age_Immune_Coefficient_PPP": "Biological_Age_Immune_Coefficient_PPP",
+            "Biological_Age_Immune_Coefficient_TM": "Biological_Age_Immune_Coefficient_TM",
+            "Cumulative_Exposure_Immune_Coefficient_PPP": "Cumulative_Exposure_Immune_Coefficient_PPP",
+            "Cumulative_Exposure_Immune_Coefficient_TM": "Cumulative_Exposure_Immune_Coefficient_TM",
+            "Malaria_Free_Interval_Immune_Coefficient_PPP": "Malaria_Free_Interval_Immune_Coefficient_PPP",
+            "Malaria_Free_Interval_Immune_Coefficient_TM": "Malaria_Free_Interval_Immune_Coefficient_TM",
+            "Recent_Exposure_Immune_Coefficient_PPP": "Recent_Exposure_Immune_Coefficient_PPP",
+            "Recent_Exposure_Immune_Coefficient_TM": "Recent_Exposure_Immune_Coefficient_TM",
+            "Strain_Diversity_Immune_Coefficient_PPP": "Strain_Diversity_Immune_Coefficient_PPP",
+            "Strain_Diversity_Immune_Coefficient_TM": "Strain_Diversity_Immune_Coefficient_TM",
+            "Scale_Factor_Age_a": "Scale_Factor_Age_a",
+            "Scale_Factor_Age_b": "Scale_Factor_Age_b",
+            "Scale_Factor_Cum_Exp_shape": "Scale_Factor_Cum_Exp_shape",
+            "Scale_Factor_Rec_Exp_steepness": "Scale_Factor_Rec_Exp_steepness",
+            "Scale_Factor_Rec_Exp_midpoint": "Scale_Factor_Rec_Exp_midpoint",
+            "Scale_Factor_Free_Interval_a": "Scale_Factor_Free_Interval_a",
+            "Scale_Factor_Strain_Diversity_n": "Scale_Factor_Strain_Diversity_n",
+            "Diversity_From_Marginal_Prevalence": "Diversity_From_Marginal_Prevalence",
+            "Prevalence_Threshold_For_Diversity": "Prevalence_Threshold_For_Diversity",
+            "Concurrent_Infections_a": "Concurrent_Infections_a",
+            "Concurrent_Infections_b": "Concurrent_Infections_b",
+            "Concurrent_Infections_c": "Concurrent_Infections_c",
+            "ActiveInfectionsScaleFactorPT": "ActiveInfectionsScaleFactorPT",
+            "AgeScaleFactorPT": "AgeScaleFactorPT",
+            "Age_PT_Increment": "Age_PT_Increment",
+            "Base_PT": "Base_PT",
+            "ClearedInfectionsScaleFactorPT": "ClearedInfectionsScaleFactorPT",
+            "FreeIntervalScaleFactorPT": "FreeIntervalScaleFactorPT",
+            "Individual_Variation_Magnitude_PT": "Individual_Variation_Magnitude_PT",
+            "NumWavesScaleFactorPT": "NumWavesScaleFactorPT",
+            "Wave_Vs_Infection_Relative_Weight": "Wave_Vs_Infection_Relative_Weight"
+        },
+        "Param_Info": "{\"columns\":[\"Name\",\"Min\",\"Max\",\"MapTo\"],\"index\":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32],\"data\":[[\"Gametocyte_Conversion_Draw_Mean\",0,6,\"Gametocyte_Conversion_Draw_Mean\"],[\"Gametocyte_Conversion_Draw_Std_Dev\",0,1,\"Gametocyte_Conversion_Draw_Std_Dev\"],[\"Biological_Age_Immune_Coefficient_PPP\",0,3,\"Biological_Age_Immune_Coefficient_PPP\"],[\"Biological_Age_Immune_Coefficient_TM\",-1,1,\"Biological_Age_Immune_Coefficient_TM\"],[\"Cumulative_Exposure_Immune_Coefficient_PPP\",0,3,\"Cumulative_Exposure_Immune_Coefficient_PPP\"],[\"Cumulative_Exposure_Immune_Coefficient_TM\",-1,1,\"Cumulative_Exposure_Immune_Coefficient_TM\"],[\"Malaria_Free_Interval_Immune_Coefficient_PPP\",0,3,\"Malaria_Free_Interval_Immune_Coefficient_PPP\"],[\"Malaria_Free_Interval_Immune_Coefficient_TM\",-1,1,\"Malaria_Free_Interval_Immune_Coefficient_TM\"],[\"Recent_Exposure_Immune_Coefficient_PPP\",0,3,\"Recent_Exposure_Immune_Coefficient_PPP\"],[\"Recent_Exposure_Immune_Coefficient_TM\",-1,1,\"Recent_Exposure_Immune_Coefficient_TM\"],[\"Strain_Diversity_Immune_Coefficient_PPP\",0,3,\"Strain_Diversity_Immune_Coefficient_PPP\"],[\"Strain_Diversity_Immune_Coefficient_TM\",-1,1,\"Strain_Diversity_Immune_Coefficient_TM\"],[\"Scale_Factor_Age_a\",0,30,\"Scale_Factor_Age_a\"],[\"Scale_Factor_Age_b\",0,2,\"Scale_Factor_Age_b\"],[\"Scale_Factor_Cum_Exp_shape\",0,50,\"Scale_Factor_Cum_Exp_shape\"],[\"Scale_Factor_Rec_Exp_steepness\",0,100,\"Scale_Factor_Rec_Exp_steepness\"],[\"Scale_Factor_Rec_Exp_midpoint\",0,20,\"Scale_Factor_Rec_Exp_midpoint\"],[\"Scale_Factor_Free_Interval_a\",0,2,\"Scale_Factor_Free_Interval_a\"],[\"Scale_Factor_Strain_Diversity_n\",0,10,\"Scale_Factor_Strain_Diversity_n\"],[\"Diversity_From_Marginal_Prevalence\",0,200,\"Diversity_From_Marginal_Prevalence\"],[\"Prevalence_Threshold_For_Diversity\",0,10,\"Prevalence_Threshold_For_Diversity\"],[\"Concurrent_Infections_a\",0,100,\"Concurrent_Infections_a\"],[\"Concurrent_Infections_b\",0,100,\"Concurrent_Infections_b\"],[\"Concurrent_Infections_c\",0,100,\"Concurrent_Infections_c\"],[\"ActiveInfectionsScaleFactorPT\",0,1,\"ActiveInfectionsScaleFactorPT\"],[\"AgeScaleFactorPT\",0,1,\"AgeScaleFactorPT\"],[\"Age_PT_Increment\",0,10000,\"Age_PT_Increment\"],[\"Base_PT\",1000,100000,\"Base_PT\"],[\"ClearedInfectionsScaleFactorPT\",0,1,\"ClearedInfectionsScaleFactorPT\"],[\"FreeIntervalScaleFactorPT\",0,1,\"FreeIntervalScaleFactorPT\"],[\"Individual_Variation_Magnitude_PT\",0,1,\"Individual_Variation_Magnitude_PT\"],[\"NumWavesScaleFactorPT\",0,1,\"NumWavesScaleFactorPT\"],[\"Wave_Vs_Infection_Relative_Weight\",0,100,\"Wave_Vs_Infection_Relative_Weight\"]]}"
+    },
+    "Fitted_Values": "{\"columns\":[\"Sample_Id\",\"Sim_Id\",0],\"index\":[0,1,2,3,4,5,6,7,8,9],\"data\":[[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000000\",\"c6292f6f-d3b7-e911-a2c1-c4346bcb1555\",60.2955999524],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000001\",\"c8292f6f-d3b7-e911-a2c1-c4346bcb1555\",63.2697902934],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000002\",\"c9292f6f-d3b7-e911-a2c1-c4346bcb1555\",62.7403730384],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000003\",\"ca292f6f-d3b7-e911-a2c1-c4346bcb1555\",61.5711825638],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000004\",\"cc292f6f-d3b7-e911-a2c1-c4346bcb1555\",62.3018588209],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000005\",\"cd292f6f-d3b7-e911-a2c1-c4346bcb1555\",61.4220866767],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000006\",\"cf292f6f-d3b7-e911-a2c1-c4346bcb1555\",60.7561658272],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000007\",\"d0292f6f-d3b7-e911-a2c1-c4346bcb1555\",62.5064697633],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000008\",\"d1292f6f-d3b7-e911-a2c1-c4346bcb1555\",61.7019984123],[\"07b42263-d3b7-e911-a2c1-c4346bcb1555.000009\",\"d2292f6f-d3b7-e911-a2c1-c4346bcb1555\",62.9546217988]]}"
+}

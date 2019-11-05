@@ -1,5 +1,8 @@
+import itertools
 import os, re
 import sqlite3
+from collections import OrderedDict
+
 import pandas as pd
 import numpy as np
 import seaborn as sns
@@ -10,60 +13,94 @@ from scipy.special import gammaln
 from simtools.Analysis.BaseAnalyzers import BaseAnalyzer
 from simtools.Analysis.AnalyzeManager import AnalyzeManager
 from calibtool.analyzers.Helpers import season_channel_age_density_csv_to_pandas
-from add_inputEIR_framework.reference_data.Garki_population_summary import *
 from calibtool.LL_calculators import dirichlet_multinomial_pandas
 
+from simtools.Analysis.BaseAnalyzers import BaseAnalyzer
+from simtools.Analysis.AnalyzeManager import AnalyzeManager
+from dtk.utils.parsers.malaria_summary import summary_channel_to_pandas
+
+from calibtool import LL_calculators
+from calibtool.analyzers.Helpers import \
+    convert_to_counts, age_from_birth_cohort, season_from_time, aggregate_on_index
+
+
+
+def grouped_df(df, pfprdict, index, column_keep, column_del):
+    """
+    Recut dataframe to recategorize data into desired age and parasitemia bins
+
+    Args:
+        df: Dataframe to be rebinned
+        pfprdict: Dictionary mapping postive counts per slide view (http://garkiproject.nd.edu/demographic-parasitological-surveys.html)
+                to density of parasites/gametocytes per uL
+        index: Multi index into which 'df' is rebinned
+        column_keep: Column (e.g. parasitemia) to keep
+        column_del: Column (e.g. gametocytemia) to delete
+    """
+    dftemp = df.copy()
+    del dftemp[column_del]
+
+    dftemp['PfPR Bin'] = df[column_keep]
+    dftemp = aggregate_on_index(dftemp, index)
+
+    dfGrouped = dftemp.groupby(['Season', 'Age Bin', 'PfPR Bin'])
+
+    dftemp = dfGrouped[column_keep].count()
+    dftemp = dftemp.unstack().fillna(0).stack()
+    dftemp = dftemp.rename(column_keep).reset_index()
+    dftemp['PfPR Bin'] = [pfprdict[p] for p in dftemp['PfPR Bin']]
+
+    dftemp = dftemp.set_index(['Season', 'Age Bin', 'PfPR Bin'])
+
+    return dftemp
+
 def get_reference_data(self):
-    dir_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'reference_data'))
+    dir_path = os.path.abspath(os.path.join(os.path.dirname( __file__ ),'..', 'reference data'))
     dfFileName = os.path.join(dir_path, 'Garki_df.csv')
-
-
     df = pd.read_csv(dfFileName)
-
-    ref_df = df[df['Village'] == self.metadata['village']]
-
-    age_bins = self.metadata['age_bins']
-    age_bin_labels = self.metadata['age_bin_labels']
-    density_bins = self.metadata['density_bins']
-    density_bin_edges = self.metadata['density_bin_edges']
+    df = df.loc[df['Village']==self.metadata['village']]
+    pfprBinsDensity = self.metadata['density_bins']
     uL_per_field = 0.5 / 200.0  # from Garki PDF - page 111 - 0.5 uL per 200 views
-    pfprBins = 1 - np.exp(-np.asarray(density_bins) * uL_per_field)
+    pfprBins = 1 - np.exp(-np.asarray(pfprBinsDensity) * uL_per_field)
+    seasons = self.metadata['seasons']
+    pfprdict = dict(zip(pfprBins, pfprBinsDensity))
 
-    all_surveys_ref_df = pd.DataFrame(columns=['month', 'age_bin', 'density_bin', 'count'])
+    bins = OrderedDict([
+        ('Season', self.metadata['seasons']),
+        ('Age Bin', self.metadata['age_bins']),
+        ('PfPR Bin', pfprBins)
+    ])
+    bin_tuples = list(itertools.product(*bins.values()))
+    index = pd.MultiIndex.from_tuples(bin_tuples, names=bins.keys())
 
-    df = ref_df
-    df['age_bin'] = pd.cut(df['Age'], bins=[x for x in age_bins],
-                           labels=age_bin_labels)
-    df['asexual_parasites'] = [x for x in df['Parasitemia']]
-    df['density_bin'] = pd.cut(df['Parasitemia'], bins=pfprBins, labels=density_bin_edges)
-    df['gametocytes'] = [x for x in df['Gametocytemia']]
+    df = df.loc[df['Seasons'].isin(seasons)]
+    df = df.rename(columns={'Seasons': 'Season', 'Age': 'Age Bin'})
 
-    survey_summary_df = pd.DataFrame(columns=['month', 'age_bin', 'density_bin', 'count'])
+    df2 = grouped_df(df, pfprdict, index, 'Parasitemia', 'Gametocytemia')
+    df3 = grouped_df(df, pfprdict, index, 'Gametocytemia', 'Parasitemia')
+    dfJoined = df2.join(df3).fillna(0)
+    dfJoined = pd.concat([dfJoined['Gametocytemia'], dfJoined['Parasitemia']])
+    dfJoined.name = 'Counts'
+    dftemp = dfJoined.reset_index()
+    dftemp['Channel'] = 'PfPR by Gametocytemia and Age Bin'
+    dftemp.loc[len(dftemp) / 2:, 'Channel'] = 'PfPR by Parasitemia and Age Bin'
+    dftemp = dftemp.rename(columns={'Seasons': 'Season', 'PfPR Bins': 'PfPR Bin', 'Age Bins': 'Age Bin'})
+    dftemp = dftemp.set_index(['Channel', 'Season', 'Age Bin', 'PfPR Bin'])
 
-    for index, age_density_subset in df.groupby(['age_bin', 'density_bin', 'Seasons']):
-        subset_df = pd.DataFrame({
-            'month': [index[2]],
-            'age_bin': [index[0]],
-            'density_bin': [index[1]],
-            'count': [max(age_density_subset.shape[0], 0)]
-        })
-        survey_summary_df = pd.concat([survey_summary_df, subset_df])
-    all_surveys_ref_df = pd.concat([all_surveys_ref_df, survey_summary_df])
-    all_surveys_ref_df = all_surveys_ref_df[all_surveys_ref_df['month'].isin(['DH2', 'W2', 'DC2'])]
-    return all_surveys_ref_df
 
-class Survey_Prevalence_by_Age_and_Density_Analyzer(BaseAnalyzer):
+    return dftemp
 
-    def __init__(self,dates,verbose_plotting):
-        super().__init__(filenames=['output/MalariaSurveyJSONAnalyzer_Day_%d_0.json' %x for x in dates])
-        self.dates = dates
+class Summary_Prevalence_by_Age_and_Density_Analyzer(BaseAnalyzer):
+
+    def __init__(self, verbose_plotting, **kwargs):
+        super().__init__(filenames=['output/MalariaSummaryReport_Monthly_Report.json'])
+
         self.verbose_plotting = verbose_plotting
         self.metadata =  {
-        'density_bins': [-1, 0, 50, 200, 500, np.inf],  # (, 0] (0, 50] ... (50000, ]
-        'density_bin_edges':['-1', '0', '50', '200', '500'],
+        'density_bins': [0, 50, 200, 500, np.inf],  # (, 0] (0, 50] ... (50000, ]
+        'density_bin_edges':['0', '50', '200', '500'],
         'age_bins': [0, 1, 4, 8, 18, 28, 43, np.inf],  # (, 5] (5, 15] (15, ],
         'age_bin_labels':['<1', '1-4', '4-8', '8-18', '18-28', '28-43', '>43'],
-        'survey_days':[365 * (years - 1) + x for x in np.arange(0, 365, 30)],
         'seasons': ['DC2', 'DH2', 'W2'],
         'seasons_by_month': {
             'Apr': 'DH2',
@@ -72,198 +109,108 @@ class Survey_Prevalence_by_Age_and_Density_Analyzer(BaseAnalyzer):
         },
         'village': 'Sugungum'
     }
+        self.reference = get_reference_data(self)
+        # Get channels to extract from 'Channel' level of reference MultiIndex
+        ref_ix = self.reference.index
+        channels_ix = ref_ix.names.index('Channel')
+        self.channels = ref_ix.levels[channels_ix].values
+
+        self.seasons = kwargs.get('seasons')
 
     def select_simulation_data(self, data, simulation):
-        aEIR = simulation.tags['annual EIR']
-        years = simulation.tags['sim_duration_years']
-        months = [
-            'DC2',
-            'Feb',
-            'Mar',
-            'Apr',
-            'DH2',
-            'Jun',
-            'Jul',
-            'Aug',
-            'W2',
-            'Oct',
-            'Nov',
-            'Dec'
-        ]
+        # The multi-index that was used in the reference, should match the bins that were used in the call to the summary report in sim commissioning
+        #build the multindex
+        #slice the df object by just those months corresponding to seasons of interest
+        #Add that dimension to the multindex and d the groupby and count steps
+        #return as metadata and sim_df
+        ref_df_multiindex_levels = self.reference.index.levels
+        summary_data_by_month = data[self.filenames[0]]['DataByTimeAndPfPRBinsAndAgeBins']['PfPR by Parasitemia and Age Bin']
+        #the months of sim time corresponding to ref seasons are (0-indexed) 3-Apr, 5-Jun, and 12, for subsequent Jan
+        sim_df_season_subset = [summary_data_by_month[x] for x in [3,5,12]]
+        sim_df = pd.DataFrame(sim_df_season_subset).T
+        #columns should now be season subset
+        sim_df.columns = ('DH2', 'W2', 'DC2')
+        #index should be age_bins level of multindex
+        sim_df.index = ref_df_multiindex_levels[3]
 
-        age_bins = self.metadata['age_bins']
-        age_bin_labels = self.metadata['age_bin_labels']
+        sim_df.sample = simulation.tags.get("__sample_index__")
+        sim_df.sim_id = simulation.tags.get("sim_id")
 
-        density_bins = self.metadata['density_bins']
-        density_bin_edges = self.metadata['density_bin_edges']
+        return sim_df
 
-        survey_days = self.metadata['survey_days']
-
-        #loop through survey_report days
-        all_surveys_df = pd.DataFrame(columns=['survey','age_bin','density_bin','count'])
-        for day in range(len(survey_days)):
-
-            survey_data = data[self.filenames[day]]
-            numeric_day = int(self.filenames[day][-10:-7])
-            #loop through age_bins and then calculate the analyzer metrics across individuals
-            #individuals true ages will betheir initial birthday plus time until report!
-            df = pd.DataFrame([x for x in survey_data['patient_array']])
-            df['age_bin'] = pd.cut(df['initial_age'], bins=[365 * x for x in age_bins],
-                                   labels=age_bin_labels)
-
-            df['asexual_parasites'] = [x[0] for x in df['asexual_parasites']]
-            df['density_bin'] = pd.cut(df['asexual_parasites'],bins = density_bins,labels = density_bin_edges)
-            df['gametocytes'] = [x[0] for x in df['gametocytes']]
-            df['asexual_positive'] = [bool(x>100) for x in df['asexual_parasites']]
-
-            survey_summary_df = pd.DataFrame(columns=['survey','month','age_bin', 'density_bin', 'count'])
-
-            for index, age_density_subset in df.groupby(['age_bin','density_bin']):
-                subset_df = pd.DataFrame({
-                        'survey':[survey_days[day]],
-                        'month': [months[day % 12]],
-                        'age_bin':[index[0]],
-                        'density_bin':[index[1]],
-                        'count': [max(age_density_subset.shape[0],0)]
-                    })
-                survey_summary_df = pd.concat([survey_summary_df,subset_df])
-            all_surveys_df = pd.concat([all_surveys_df,survey_summary_df])
-
-
-
-        return {'aEIR': aEIR,
-                'sim_df': all_surveys_df,
-                'years': years,
-                'age_bins': age_bins,
-                'parasitemia_bins': density_bins,
-                'survey_days':survey_days
-
-                }
     def finalize(self, all_data):
-        # first extract the age bins from the reference data structure
-        cmap = [
-            '#3498DB',
-            '#1ABC9C',
-            '#16A085',
-            '#27AE60',
-            '#2ECC71',
-            '#F1C40F',
-            '#F39C12',
-            '#E67E22',
-            '#D35400',
-            '#C0392B',
-            '#8E44AD',
-            '#2980B9']
-        months = [
-            'Jan',
-            'Feb',
-            'Mar',
-            'Apr',
-            'May',
-            'Jun',
-            'Jul',
-            'Aug',
-            'Sep',
-            'Oct',
-            'Nov',
-            'Dec'
-        ]
-        ref_data = get_reference_data(self)
-        #columns that I want are survey/month, age_bin, density_bin, count
+        # compare the sim_data and ref objects by doing a diff and norm
+        # append result to a results csv with sampleid, simid, and value
+        #plot all results on a facet grid
 
-        #want to plot the reference data on the same axes as the sim binned data
-        #want to calc a distance metric between sim and ref (dirch multi?)
+        ref_data = get_reference_data(self)
+        ref_data['bin_pop'] = ref_data.groupby(by=['Channel', 'Season', 'Age Bin'])['Counts'].sum()
+        ref_data['proportion'] = ref_data['Counts'] / ref_data['bin_pop']
+        ref_data.reset_index(inplace=True)
+
+        channels = self.reference.index.levels[0].values
+        seasons = self.reference.index.levels[1].values
+        age_bins = self.reference.index.levels[2].values
+        density_bins = self.reference.index.levels[3].values
+
+
 
         results = pd.DataFrame()
-
         for sim, data in all_data.items():
-            #for each sim I want to group by each age bin and then calculate a mean infection duration and then append to a dataframe a row that has the columns:
-            # sample. simid. category. and value from sim
+            exp_id = sim.experiment_id
+            if self.verbose_plotting:
+                fig, axes = plt.subplots(nrows=len(age_bins), ncols=len(seasons), sharex=True, sharey=True)
+            diffs = []
+            for season in range(len(seasons)):
+                for density_bin in density_bins:
+                    for age_bin in range(len(age_bins)):
+                        if age_bin == 0:
+                            pass
+                        else:
+                            sim_value = data.loc[density_bin,seasons[season]][age_bin]
+                            ref_value = ref_data.loc[
+                                (ref_data['Channel'] == 'PfPR by Parasitemia and Age Bin') &
+                                (ref_data['Season'] == seasons[season]) &
+                                (ref_data['Age Bin'] == age_bins[age_bin]) &
+                                (ref_data['PfPR Bin'] == density_bin)]['proportion'].values[0]
+                            diff = sim_value -ref_value
+                            diffs.append(diff)
 
-            sample = sim.tags.get("__sample_index__")
+                            if self.verbose_plotting:
+                                axes[age_bin][season].scatter(x = density_bins,y=[ref_data.loc[
+                                (ref_data['Channel'] == 'PfPR by Parasitemia and Age Bin') &
+                                (ref_data['Season'] == seasons[season]) &
+                                (ref_data['Age Bin'] == age_bins[age_bin]) &
+                                (ref_data['PfPR Bin'] == density_bin)]['proportion'].values[0] for density_bin in density_bins],color = 'r',alpha = 0.7)
+
+                                axes[age_bin][season].scatter(x=density_bins, y = [data.loc[density_bin,seasons[season]][age_bin] for density_bin in density_bins],marker = 'x',color = 'b',alpha = 0.7)
+            norm = np.linalg.norm(diffs)
+
+            ref_data = get_reference_data(self)
+            ref_data['bin_pop'] = ref_data.groupby(by=['Channel', 'Season', 'Age Bin'])['Counts'].sum()
+            ref_data['proportion'] = ref_data['Counts'] / ref_data['bin_pop']
+            ref_data.reset_index(inplace=True)
+
             sim_id = sim.id
-            for age in range(len(age_bins[:-1])):
-                sim_subset = data[(data['initial_age'] >= age_bins[age])&(data['initial_age'] < age_bins[age+1])]
-                simulation_durations = []
-                for iid, patient in sim_subset.iterrows():
-                    (positive_day_indices,) = np.where(np.array(patient['true_asexual_parasites'][0]) > 0)
-                    try:
-                        simulation_durations.append(max(positive_day_indices))
-                    except:
-                        print(iid, age_bins[age], sim_id)
-
-                age_cat = f'{age_bins[age]/365}-{age_bins[age+1]/365}'
-                value = np.mean(simulation_durations)
-                sub_results = pd.DataFrame({'sample' : sample,
-                                            'sim_id': sim_id,
-                                            'age_cat': age_cat,
-                                            'value': [value]})
-                #Could log the individual id, ind age and ind duration.
-
-                results = pd.concat([results,sub_results])
-            #loop through all the age bins
-            #evaluate their mean duration for each age bin
-        results.to_csv(os.path.join('..', 'iter0', 'analyzer_results.csv'))
-
-        for sim, data in all_data.items():
-            eir = data['aEIR']
-            exp_name = sim.experiment.exp_name
-            age_bin_labels = self.metadata['age_bin_labels']
-
-            counts_by_age_and_density_bin = data['sim_df']
-            counts_by_age_and_density_bin.reset_index(drop=True, inplace=True)
-            counts_by_age_and_density_bin = counts_by_age_and_density_bin[counts_by_age_and_density_bin.month.isin(self.metadata['seasons'])]
-
-            #remove the first January from sim data, as data are reflected from the subsequent Jan in DC2
-
-            counts_by_age_and_density_bin.drop(
-                counts_by_age_and_density_bin[counts_by_age_and_density_bin['survey'] == 730].index, inplace=True)
-
-            counts_by_age_and_density_bin.drop(columns='survey', inplace=True)
-            df2 = pd.merge(ref_data, counts_by_age_and_density_bin, on=['age_bin', 'density_bin', 'month'])
-
-            df2['ref_bin_pop'] = df2.groupby(['month', 'age_bin']).transform(lambda x: x.sum())['count_x']
-            df2['sim_bin_pop'] = df2.groupby(['month', 'age_bin']).transform(lambda x: x.sum())['count_y']
-            df2['ref'] = df2['count_x']/df2['ref_bin_pop']
-            df2['sim'] = df2['count_y'] / df2['sim_bin_pop']
-            # df3 = df2[df2['month', 'age_bin', 'density_bin'],:]
-            # df3.set_index(['month', 'age_bin', 'density_bin'], inplace=True)
-            # LL = dirichlet_multinomial_pandas_mod(df3)
-
-            df2['diff'] = df2['sim']-df2['ref']
-            norm = np.linalg.norm(df2['diff'],ord = 1)
-
-            # new_df = pd.merge(A_df, B_df, how='left', left_on=['A_c1', 'c2'], right_on=['B_c1', 'c2'])
-            g = sns.FacetGrid(df2, col="month", row="age_bin")
-            g = g.map(plt.plot, "density_bin", "ref", marker='.', markersize=20, color='r')
-            g = g.map(plt.plot, "density_bin", "sim", marker='x', markersize=20, color='b')
-
-            plt.suptitle(f'PfPR by Season (col), Age (row) and Density Bin (x), aEIR ={eir}')
-            sim_dir_path = os.path.join(os.path.expanduser('~'), 'Dropbox (IDM)', 'Malaria Team Folder', 'projects',
-                                        'updated_infection_and_immunity',
-                                        'malaria-two-pt-oh', 'figures', 'Simulation_Sanity_Checks',
-                                        f'{exp_name}-eir{int(eir)}')
-
-            if not os.path.exists(sim_dir_path):
-                os.mkdir(sim_dir_path)
-            plt.savefig(os.path.join(sim_dir_path,
-                                     'pfpr_by_age_bin_and density_bin_by_month.png'))
-            if self.verbose_plotting == True:
-                plt.show()
-            else:
-                plt.clf()
+            sim.tags.get("__sample_index__")
+            sample = sim.tags.get("__sample_index__")
             sub_results = pd.DataFrame({'sample': sample,
                                         'sim_id': sim_id,
-                                        'age_cat': age_cat,
-                                        'value': [value]})
+                                        'value': [norm]})
             results = pd.concat([results, sub_results])
+            if self.verbose_plotting:
+                plt.suptitle('Prevalence by season (column), age bin (row), and density bin (xaxis)')
+                plt.savefig(
+                    rf'C:\Users\jorussell.INTERNAL\Dropbox (IDM)\Malaria Team Folder\projects\updated_infection_and_immunity\malaria-two-pt-oh\figures\history_matching\Sugungum\Season_Age_Density_Bin_PfPR\sample-{sample}_exp-{sim_id}.png')
+                plt.close()
+        #define exp_id
+        results.to_csv(os.path.join('..', 'iter0', f'{exp_id}','analyzer_results.csv'))
 
 
         ######
 
 
 if __name__ == '__main__':
-    years = 3
-    survey_days = [365 * (years - 1) + x for x in np.arange(0, 365, 30)]
-    am = AnalyzeManager('latest',analyzers=Survey_Prevalence_by_Age_and_Density_Analyzer(dates = survey_days,verbose_plotting=True))
+
+    am = AnalyzeManager('9be99541-56ff-e911-a2c3-c4346bcb1551',analyzers=Summary_Prevalence_by_Age_and_Density_Analyzer(verbose_plotting=True))
     am.analyze()

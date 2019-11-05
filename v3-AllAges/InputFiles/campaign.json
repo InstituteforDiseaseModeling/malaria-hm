@@ -1,0 +1,114 @@
+{
+   "Campaign_Name": "Empty Campaign",
+   "Events": [{
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Age_Dependence": "SURFACE_AREA_DEPENDENT",
+               "Monthly_EIR": [
+                  1.8,
+                  0.2,
+                  0.4,
+                  0.4,
+                  0.30000000000000004,
+                  1.0,
+                  2.0,
+                  2.8000000000000003,
+                  4.2,
+                  1.5,
+                  1.4000000000000001,
+                  0.7000000000000001
+               ],
+               "class": "InputEIR"
+            },
+            "Number_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "Input EIR intervention",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 0,
+         "class": "CampaignEvent"
+      },
+    {
+      "Event_Coordinator_Config": {
+        "Intervention_Config": {
+          "Age_Dependence": "SURFACE_AREA_DEPENDENT",
+          "Monthly_EIR": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "class": "InputEIR"
+        },
+        "Number_Repetitions": 10,
+        "class": "StandardInterventionDistributionEventCoordinator"
+      },
+      "Event_Name": "Input EIR intervention",
+      "Nodeset_Config": {
+        "class": "NodeSetAll"
+      },
+      "Start_Day": 10950,
+      "class": "CampaignEvent"
+    },
+    {
+      "Event_Coordinator_Config": {
+        "Demographic_Coverage": 1.0,
+        "Disqualifying_Properties": [ ],
+        "Intervention_Config": {
+          "Intervention_List": [
+            {
+              "Cost_To_Consumer": 1.5,
+              "Dosing_Type": "FullTreatmentCourse",
+              "Drug_Type": "Artemether_Lumefantrine",
+              "class": "AntimalarialDrug"
+            }
+          ],
+          "class": "MultiInterventionDistributor"
+        },
+        "Node_Property_Restrictions": [ ],
+        "Number_Repetitions": 1,
+        "Property_Restrictions_Within_Node": [ ],
+        "Target_Age_Max": 3.40282e+38,
+        "Target_Age_Min": 0,
+        "Target_Demographic": "Everyone",
+        "Timesteps_Between_Repetitions": 60,
+        "class": "StandardInterventionDistributionEventCoordinator"
+      },
+      "Nodeset_Config": {
+        "class": "NodeSetAll"
+      },
+      "Start_Day": 10950,
+      "class": "CampaignEvent"
+    },
+    {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Challenge_Type": "InfectiousBites",
+               "Infectious_Bite_Count": 5,
+               "class": "MalariaChallenge"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "Timesteps_Between_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 10980,
+         "class": "CampaignEvent"
+      }
+      
+   ],
+   "Use_Defaults": 1
+}

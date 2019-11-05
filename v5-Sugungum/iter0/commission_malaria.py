@@ -13,8 +13,8 @@ from dtk.utils.builders.TemplateHelper import TemplateHelper
 from dtk.utils.builders.ConfigTemplate import ConfigTemplate
 from dtk.utils.builders.TaggedTemplate import CampaignTemplate, DemographicsTemplate
 from history_matching import quick_read
-from malaria.reports.MalariaReport import add_patient_report
-
+from malaria.reports.MalariaReport import add_patient_report, add_survey_report, add_summary_report
+from dtk.interventions.input_EIR import add_InputEIR
 
 iteration = int(re.search(r'iter(\d+)', os.getcwd()).group(1))
 N_rep_per_sample = 1
@@ -40,20 +40,39 @@ config_builder = DTKConfigBuilder.from_files(
     os.path.join(plugin_files_dir, 'campaign.json')
 )
 
+years = 3    # in years
+add_summary_report(config_builder,
+                   start = 0,
+                   description='Monthly_Report',
+                   interval = 365/12,
+                   nreports = years*12,
+                   age_bins = [0, 1, 4, 8, 18, 28, 43, 125],
+                   parasitemia_bins = [0, 50, 200, 500, 2000000]
+                   )
 
 config_builder.update_params({
-    "Serialized_Population_Filenames": [
-        "state-14600.dtk"
-    ],
-    "Serialized_Population_Path": r'..\InputFiles',
-    "Simulation_Duration": 730
-})
-add_patient_report(config_builder)
+        'Base_Population_Scale_Factor': 1,
+        'Simulation_Duration': 365*years,
+        'Use_Fixed_Scale_Factor': 0,
+        'Enable_Vital_Dynamics': 1,
+        'Enable_Disease_Mortality':0,
+        'Demographics_Filenames' : ['Namawala_single_node_demographics.json'],
+        'Biological_Age_Immune_Coefficient_TM':1,
+        'Biological_Age_Immune_Coefficient_PPP':3,
+        'Max_Individual_Infections': 30,
+        'Use_Fixed_Wave_Period': 0
+        # 'Report_Detection_Threshold_Blood_Smear_Gametocytes': 40
+
+    })
+scale_factor = 1
+monthly_EIR = [1, 1, 0.5, 1, 1, 2, 3.875, 7.75, 15.0, 3.875, 1, 1]
+add_InputEIR(config_builder, [x * scale_factor for x in monthly_EIR])
 
 def map_sample_to_model_input(config_builder, sample_idx, replicate_idx, sample):
     table = copy.deepcopy(table_base)
     table['TAGS'].update({'__sample_index__': sample_idx, '__replicate_index__': replicate_idx})
     table['Run_Number'] = random.randint(0, 1e6)
+    table['TAGS'].update({'[SAMPLE] %s' % k: v for k, v in sample.items()})
 
     for param_name,p in params.iterrows():
         if param_name in sample and 'MapTo' in p:
@@ -66,6 +85,7 @@ def map_sample_to_model_input(config_builder, sample_idx, replicate_idx, sample)
     assert( len(sample) == 0 ) # All params used
 
     return templates.mod_dynamic_parameters(config_builder, table)
+
 
 def choose_and_scale_samples_unconstrained(num_samples):
     N_dim = params.shape[0]
@@ -126,7 +146,7 @@ exp_builder = ModBuilder.from_combos(
 
 run_sim_args =  {'config_builder': config_builder,
                  'exp_builder': exp_builder,
-                 'exp_name': 'Malaria Challenge 2yearpostburn Iter%d'%iteration}
+                 'exp_name': 'addInputEIR_Sugungum_Calib_free_IM Iter%d'%iteration}
 
 if __name__ == "__main__":
 

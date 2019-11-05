@@ -1,0 +1,24 @@
+{
+   "Campaign_Name": "Empty Campaign",
+   "Events": [
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Challenge_Type": "InfectiousBites",
+               "Infectious_Bite_Count": 5,
+               "class": "MalariaChallenge"
+            },
+            "Number_Distributions": -1,
+            "Number_Repetitions": 1,
+            "Timesteps_Between_Repetitions": 1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 0,
+         "class": "CampaignEvent"
+      }
+   ],
+   "Use_Defaults": 1
+}
