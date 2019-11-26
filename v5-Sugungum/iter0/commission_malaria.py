@@ -18,7 +18,7 @@ from dtk.interventions.input_EIR import add_InputEIR
 
 iteration = int(re.search(r'iter(\d+)', os.getcwd()).group(1))
 N_rep_per_sample = 1
-N_samples = 128
+N_samples = 256
 
 params = quick_read( os.path.join('..', 'Params.xlsx'), 'Params').set_index('Name')
 
@@ -26,7 +26,6 @@ plugin_files_dir = os.path.join('..', 'InputFiles')
 cfg = ConfigTemplate.from_file( os.path.join(plugin_files_dir, 'config.json') )
 cpn = CampaignTemplate.from_file( os.path.join(plugin_files_dir, 'campaign.json') )
 # demog = DemographicsTemplate.from_file( os.path.join(plugin_files_dir, 'Malariatherapy_demographics.json') )
-
 
 templates = TemplateHelper()
 table_base = {
@@ -39,31 +38,30 @@ config_builder = DTKConfigBuilder.from_files(
     os.path.join(plugin_files_dir, 'config.json'),
     os.path.join(plugin_files_dir, 'campaign.json')
 )
+years = 3
 
-years = 3    # in years
+# config_builder.update_params({
+#         'Base_Population_Scale_Factor': 0.1,
+#         'Use_Fixed_Scale_Factor': 0,
+#         'Enable_Vital_Dynamics': 1,
+#         'Enable_Disease_Mortality':0,
+#         'Demographics_Filenames' : ['Namawala_single_node_demographics.json'],
+#         'Max_Individual_Infections': 30,
+#         'Use_Fixed_Wave_Period': 0
+#         # 'Report_Detection_Threshold_Blood_Smear_Gametocytes': 40
+#     })
+
 add_summary_report(config_builder,
-                   start = 0,
+                   start = 7300,
                    description='Monthly_Report',
                    interval = 365/12,
                    nreports = years*12,
-                   age_bins = [0, 1, 4, 8, 18, 28, 43, 125],
+                   age_bins = [1, 4, 8, 18, 28, 43, 125],
                    parasitemia_bins = [0, 50, 200, 500, 2000000]
                    )
+add_patient_report(config_builder)
 
-config_builder.update_params({
-        'Base_Population_Scale_Factor': 1,
-        'Simulation_Duration': 365*years,
-        'Use_Fixed_Scale_Factor': 0,
-        'Enable_Vital_Dynamics': 1,
-        'Enable_Disease_Mortality':0,
-        'Demographics_Filenames' : ['Namawala_single_node_demographics.json'],
-        'Biological_Age_Immune_Coefficient_TM':1,
-        'Biological_Age_Immune_Coefficient_PPP':3,
-        'Max_Individual_Infections': 30,
-        'Use_Fixed_Wave_Period': 0
-        # 'Report_Detection_Threshold_Blood_Smear_Gametocytes': 40
 
-    })
 scale_factor = 1
 monthly_EIR = [1, 1, 0.5, 1, 1, 2, 3.875, 7.75, 15.0, 3.875, 1, 1]
 add_InputEIR(config_builder, [x * scale_factor for x in monthly_EIR])
@@ -146,7 +144,7 @@ exp_builder = ModBuilder.from_combos(
 
 run_sim_args =  {'config_builder': config_builder,
                  'exp_builder': exp_builder,
-                 'exp_name': 'addInputEIR_Sugungum_Calib_free_IM Iter%d'%iteration}
+                 'exp_name': 'addInputEIR_Sugungum_Calib_longBurn_Iter%d'%iteration}
 
 if __name__ == "__main__":
 

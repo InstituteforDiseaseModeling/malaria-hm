@@ -98,7 +98,7 @@ class Summary_Prevalence_Analyzer(BaseAnalyzer):
         self.metadata =  {
         'density_bins': [0, 50, 200, 500, np.inf],  # (, 0] (0, 50] ... (50000, ]
         'density_bin_edges':['0', '50', '200', '500'],
-        'age_bins': [0, 1, 4, 8, 18, 28, 43, np.inf],  # (, 5] (5, 15] (15, ],
+        'age_bins': [1, 4, 8, 18, 28, 43, np.inf],  # (, 5] (5, 15] (15, ],
         'age_bin_labels':['<1', '1-4', '4-8', '8-18', '18-28', '28-43', '>43'],
         'seasons': ['DC2', 'DH2', 'W2'],
         'seasons_by_month': {
@@ -125,7 +125,7 @@ class Summary_Prevalence_Analyzer(BaseAnalyzer):
         ref_df_multiindex_levels = self.reference.index.levels
         summary_data_by_month = data[self.filenames[0]]['DataByTimeAndPfPRBinsAndAgeBins']['PfPR by Parasitemia and Age Bin']
         #the months of sim time corresponding to ref seasons are (0-indexed) 3-Apr, 5-Jun, and 12, for subsequent Jan
-        sim_df_season_subset = [summary_data_by_month[x] for x in [3,5,12]]
+        sim_df_season_subset = [summary_data_by_month[x] for x in [3,6,11]]
         sim_df = pd.DataFrame(sim_df_season_subset).T
         #columns should now be season subset
         sim_df.columns = ('DH2', 'W2', 'DC2')
@@ -154,22 +154,28 @@ class Summary_Prevalence_Analyzer(BaseAnalyzer):
         for sim, data in all_data.items():
             exp_id = sim.experiment_id
 
-            pfpr_list = []
+
             for season in range(len(seasons)):
-                season_pfprs = data[seasons[season]].apply(pd.Series).drop(columns=[0])
-                pfpr_list.append(np.sum(np.mean(season_pfprs, axis=1)[1::]))
+                for density_bin in density_bins:
+                    for age_bin in range(len(age_bins)):
+                        sim_value = data.loc[density_bin, seasons[season]][age_bin]
 
-            mean = np.mean(pfpr_list)
 
-            sim_id = sim.id
-            sim.tags.get("__sample_index__")
-            sample = sim.tags.get("__sample_index__")
-            sub_results = pd.DataFrame({'sample': sample,
-                                        'sim_id': sim_id,
-                                        'value': [mean]})
-            results = pd.concat([results, sub_results])
+
+
+                        sim_id = sim.id
+                        sim.tags.get("__sample_index__")
+                        sample = sim.tags.get("__sample_index__")
+                        sub_results = pd.DataFrame({'sample': sample,
+                                                    'sim_id': sim_id,
+                                                    'season': seasons[season],
+                                                    'age_bin': age_bins[age_bin],
+                                                    'density_bin': density_bin,
+                                                    'value': [sim_value]})
+                        results = pd.concat([results, sub_results])
 
         #define exp_id
+
         results.to_csv(os.path.join('..', 'iter0', f'{exp_id}','analyzer_results.csv'))
 
 
@@ -178,5 +184,5 @@ class Summary_Prevalence_Analyzer(BaseAnalyzer):
 
 if __name__ == '__main__':
 
-    am = AnalyzeManager('9be99541-56ff-e911-a2c3-c4346bcb1551',analyzers=Summary_Prevalence_Analyzer())
+    am = AnalyzeManager('d8ccb6e9-1e04-ea11-a2c3-c4346bcb1551',analyzers=Summary_Prevalence_Analyzer())
     am.analyze()

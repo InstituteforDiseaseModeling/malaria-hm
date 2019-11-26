@@ -5,20 +5,7 @@
          "Event_Coordinator_Config": {
             "Intervention_Config": {
                "Age_Dependence": "SURFACE_AREA_DEPENDENT",
-               "Monthly_EIR": [
-                  1,
-                  1,
-                  0.5,
-                  1,
-                  1,
-                  2,
-                  3.875,
-                  7.75,
-                  15.0,
-                  3.875,
-                  1,
-                  1
-               ],
+               "Monthly_EIR": [1, 1, 0.5, 1, 1, 2, 3.875, 7.75, 15.0, 3.875, 1, 1],
                "class": "InputEIR"
             },
             "Number_Repetitions": -1,

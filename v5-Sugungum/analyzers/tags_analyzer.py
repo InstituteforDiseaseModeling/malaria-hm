@@ -44,6 +44,6 @@ class TagsAnalyzer(BaseAnalyzer):
 
 if __name__ == '__main__':
 
-    am = AnalyzeManager('d65b1d67-4aff-e911-a2c3-c4346bcb1551',analyzers=TagsAnalyzer())
+    am = AnalyzeManager('9be99541-56ff-e911-a2c3-c4346bcb1551',analyzers=TagsAnalyzer())
     am.analyze()
 
