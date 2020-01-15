@@ -1,0 +1,69 @@
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] OutputFileMetadata --> {'Id': '_internal_id', 'Length': 'length', 'FriendlyName': 'friendly_name', 'PathFromRoot': 'path_from_root', 'Url': 'url', 'MimeType': 'mime_type'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] AssetFile --> {'FileName': 'file_name', 'MD5Checksum': 'md5_checksum', 'Length': 'length', 'Uri': 'uri'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] AssetCollectionFile --> {'RelativePath': 'relative_path', 'Tags': 'tags', 'FileName': 'file_name', 'MD5Checksum': 'md5_checksum', 'Length': 'length', 'Uri': 'uri'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] AssetCollection --> {'Id': 'id', 'DateCreated': 'date_created', 'Tags': 'tags', 'Assets': 'assets'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] Configuration --> {'EnvironmentName': 'environment_name', 'SimulationInputArgs': 'simulation_input_args', 'WorkingDirectoryRoot': 'working_directory_root', 'ExecutablePath': 'executable_path', 'NodeGroupName': 'node_group_name', 'MaximumNumberOfRetries': 'maximum_number_of_retries', 'Priority': 'priority', 'MinCores': 'min_cores', 'MaxCores': 'max_cores', 'Exclusive': 'exclusive', 'AssetCollectionId': 'asset_collection_id'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] SimulationFile --> {'FileType': 'file_type', 'Description': 'description', 'FileName': 'file_name', 'MD5Checksum': 'md5_checksum', 'Length': 'length', 'Uri': 'uri'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] WorkItemFile --> {'FileType': 'file_type', 'Description': 'description', 'FileName': 'file_name', 'MD5Checksum': 'md5_checksum', 'Length': 'length', 'Uri': 'uri'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] HpcJob --> {'Id': '_internal_id', 'JobId': 'job_id', 'JobState': 'job_state', 'Priority': 'priority', 'WorkingDirectory': 'working_directory', 'OutputDirectorySize': 'output_directory_size', 'SubmitTime': 'submit_time', 'StartTime': 'start_time', 'EndTime': 'end_time', 'ErrorMessage': 'error_message', 'Configuration': 'configuration'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] Simulation --> {'Id': 'id', 'ExperimentId': 'experiment_id', 'Name': 'name', 'Description': 'description', 'Owner': 'owner', 'DateCreated': 'date_created', 'LastModified': 'last_modified', 'SimulationState': 'state', 'ErrorMessage': 'error_message', 'Tags': 'tags', 'Configuration': 'configuration', 'Files': 'files', 'HPCJobs': 'hpc_jobs'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] Experiment --> {'Id': 'id', 'SuiteId': 'suite_id', 'Name': 'name', 'Description': 'description', 'Owner': 'owner', 'DateCreated': 'date_created', 'LastModified': 'last_modified', 'Tags': 'tags', 'Configuration': 'configuration'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] Suite --> {'Id': 'id', 'Name': 'name', 'Description': 'description', 'Owner': 'owner', 'DateCreated': 'date_created', 'LastModified': 'last_modified', 'Tags': 'tags', 'Configuration': 'configuration'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Data.SerializableEntity] WorkItem --> {'Id': 'id', 'Name': 'name', 'Worker': 'worker', 'EnvironmentName': 'environment_name', 'Description': 'description', 'Owner': 'owner', 'DateCreated': 'date_created', 'LastModified': 'last_modified', 'State': 'state', 'ErrorMessage': 'error_message', 'HostName': 'host_name', 'WorkerInstanceId': 'worker_instance_id', 'WorkItemPriority': 'priority', 'WorkingDirectory': 'working_directory', 'WorkingDirectorySize': 'working_directory_size', 'AssetCollectionId': 'asset_collection_id', 'Tags': 'tags', 'Files': 'files', 'Plugins': 'plugins'}
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Client] Parsed login host: ('https', 'comps.idmod.org', None)
+01/09 13:30:18 [DEBUG] [28108] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/api/Simulations/f07aea41-1d33-ea11-a2c3-c4346bcb1551 {'count': 100000}
+01/09 13:30:19 [DEBUG] [28108] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/api/Experiments/527ff53a-1d33-ea11-a2c3-c4346bcb1551 {'children': 'Tags'}
+01/09 13:30:19 [DEBUG] [28108] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/api/Simulations {'filters': 'ExperimentId=527ff53a-1d33-ea11-a2c3-c4346bcb1551', 'count': 100000}
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/Simulations/f07aea41-1d33-ea11-a2c3-c4346bcb1551/Output {'flatten': 1}
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [output/DemographicsSummary.json -> DemographicsSummary.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [output/BinnedReport.json -> BinnedReport.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [output/MalariaSummaryReport_Monthly_Report.json -> MalariaSummaryReport_Monthly_Report.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [output/InsetChart.json -> InsetChart.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [template_campaign.json -> template_campaign.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [config.json -> config.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [StdErr.txt -> StdErr.txt] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [emodules_map.json -> emodules_map.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [StdOut.txt -> StdOut.txt] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [custom_reports.json -> custom_reports.json] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Data.AssetManager] adding [status.txt -> status.txt] to map
+01/09 13:30:20 [DEBUG] [28108] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/download/TbgStFA4EyT27Q6-HOhwUCXoWM79cAK8oEPvWUNjbq8_/UmVzZXJ2ZWRGb3JGdXR1cmVVc2U_/XFxpbnRlcm5hbC5pZG0uY3RyXElETVxIb21lXGpvcnVzc2VsbFxvdXRwdXRcVGVzdF9Db25maWdfY2FtcGFpZ25fd3JpdGluZ19JdGVyMF8yMDIwMDEwOV8yMDE4NDJcYTkxXDQwZFw0ZTFcYTkxNDBkNGUtMWQzMy1lYTExLWEyYzMtYzQzNDZiY2IxNTUxXG91dHB1dFxNYWxhcmlhU3VtbWFyeVJlcG9ydF9Nb250aGx5X1JlcG9ydC5qc29u/MalariaSummaryReport_Monthly_Report.json
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/Simulations/f37aea41-1d33-ea11-a2c3-c4346bcb1551/Output {'flatten': 1}
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [output/DemographicsSummary.json -> DemographicsSummary.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [output/BinnedReport.json -> BinnedReport.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [output/MalariaSummaryReport_Monthly_Report.json -> MalariaSummaryReport_Monthly_Report.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [output/InsetChart.json -> InsetChart.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [template_campaign.json -> template_campaign.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [config.json -> config.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [StdErr.txt -> StdErr.txt] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [emodules_map.json -> emodules_map.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [StdOut.txt -> StdOut.txt] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [custom_reports.json -> custom_reports.json] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Data.AssetManager] adding [status.txt -> status.txt] to map
+01/09 13:30:19 [DEBUG] [23220] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/download/q-rOL2PKEBfBJRqup70AxOGnL7z3A.qcj.-lTfAwfUI_/UmVzZXJ2ZWRGb3JGdXR1cmVVc2U_/XFxpbnRlcm5hbC5pZG0uY3RyXElETVxIb21lXGpvcnVzc2VsbFxvdXRwdXRcVGVzdF9Db25maWdfY2FtcGFpZ25fd3JpdGluZ19JdGVyMF8yMDIwMDEwOV8yMDE4NDJcYWYxXDQwZFw0ZTFcYWYxNDBkNGUtMWQzMy1lYTExLWEyYzMtYzQzNDZiY2IxNTUxXG91dHB1dFxNYWxhcmlhU3VtbWFyeVJlcG9ydF9Nb250aGx5X1JlcG9ydC5qc29u/MalariaSummaryReport_Monthly_Report.json
+t] REQUEST -> GET https://comps.idmod.org/asset/Simulations/f17aea41-1d33-ea11-a2c3-c4346bcb1551/Output {'flatten': 1}
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [output/DemographicsSummary.json -> DemographicsSummary.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [output/BinnedReport.json -> BinnedReport.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [output/MalariaSummaryReport_Monthly_Report.json -> MalariaSummaryReport_Monthly_Report.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [output/InsetChart.json -> InsetChart.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [template_campaign.json -> template_campaign.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [config.json -> config.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [StdErr.txt -> StdErr.txt] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [emodules_map.json -> emodules_map.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [StdOut.txt -> StdOut.txt] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [custom_reports.json -> custom_reports.json] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Data.AssetManager] adding [status.txt -> status.txt] to map
+01/09 13:30:18 [DEBUG] [5700] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/download/KRD3qaljZvimvXi.0Vx8zkif3Jvl4ug0Nh54YDw7wCI_/UmVzZXJ2ZWRGb3JGdXR1cmVVc2U_/XFxpbnRlcm5hbC5pZG0uY3RyXElETVxIb21lXGpvcnVzc2VsbFxvdXRwdXRcVGVzdF9Db25maWdfY2FtcGFpZ25fd3JpdGluZ19JdGVyMF8yMDIwMDEwOV8yMDE4NDJcYWMxXDQwZFw0ZTFcYWMxNDBkNGUtMWQzMy1lYTExLWEyYzMtYzQzNDZiY2IxNTUxXG91dHB1dFxNYWxhcmlhU3VtbWFyeVJlcG9ydF9Nb250aGx5X1JlcG9ydC5qc29u/MalariaSummaryReport_Monthly_Report.json
+cG9ydC5qc29u/MalariaSummaryReport_Monthly_Report.json
+01/09 13:30:18 [DEBUG] [30608] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/Simulations/f27aea41-1d33-ea11-a2c3-c4346bcb1551/Output {'flatten': 1}
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [output/DemographicsSummary.json -> DemographicsSummary.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [output/BinnedReport.json -> BinnedReport.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [output/MalariaSummaryReport_Monthly_Report.json -> MalariaSummaryReport_Monthly_Report.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [output/InsetChart.json -> InsetChart.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [template_campaign.json -> template_campaign.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [config.json -> config.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [StdErr.txt -> StdErr.txt] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [emodules_map.json -> emodules_map.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [StdOut.txt -> StdOut.txt] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [custom_reports.json -> custom_reports.json] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Data.AssetManager] adding [status.txt -> status.txt] to map
+01/09 13:30:19 [DEBUG] [30608] [COMPS.Client] REQUEST -> GET https://comps.idmod.org/asset/download/vcwPgDgDuJ40yxXaTnc.W-13u8IvaTgnMjzzu53L36I_/UmVzZXJ2ZWRGb3JGdXR1cmVVc2U_/XFxpbnRlcm5hbC5pZG0uY3RyXElETVxIb21lXGpvcnVzc2VsbFxvdXRwdXRcVGVzdF9Db25maWdfY2FtcGFpZ25fd3JpdGluZ19JdGVyMF8yMDIwMDEwOV8yMDE4NDJcYWUxXDQwZFw0ZTFcYWUxNDBkNGUtMWQzMy1lYTExLWEyYzMtYzQzNDZiY2IxNTUxXG91dHB1dFxNYWxhcmlhU3VtbWFyeVJlcG9ydF9Nb250aGx5X1JlcG9ydC5qc29u/MalariaSummaryReport_Monthly_Report.json
