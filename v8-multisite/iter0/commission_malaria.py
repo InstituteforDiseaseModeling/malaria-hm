@@ -22,7 +22,7 @@ import malaria.site.input_EIR_by_site
 
 iteration = int(re.search(r'iter(\d+)', os.getcwd()).group(1))
 N_rep_per_sample = 1
-N_samples = 10
+N_samples = 200
 params = quick_read( os.path.join('..', 'Params.xlsx'), 'Params').set_index('Name')
 exp_name = 'Test_Config_campaign_writing_Iter%d'%iteration
 
