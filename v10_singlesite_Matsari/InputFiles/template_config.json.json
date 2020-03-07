@@ -1,0 +1,36 @@
+{
+   "Campaign_Name": "Empty Campaign",
+   "Events": [
+      {
+         "Event_Coordinator_Config": {
+            "Intervention_Config": {
+               "Age_Dependence": "SURFACE_AREA_DEPENDENT",
+               "Monthly_EIR": [
+                  43.8,
+                  68.5,
+                  27.4,
+                  46.6,
+                  49.4,
+                  24.7,
+                  13.7,
+                  11,
+                  11,
+                  2.74,
+                  13.7,
+                  16.5
+               ],
+               "class": "InputEIR"
+            },
+            "Number_Repetitions": -1,
+            "class": "StandardInterventionDistributionEventCoordinator"
+         },
+         "Event_Name": "Input EIR intervention",
+         "Nodeset_Config": {
+            "class": "NodeSetAll"
+         },
+         "Start_Day": 0,
+         "class": "CampaignEvent"
+      }
+   ],
+   "Use_Defaults": 1
+}

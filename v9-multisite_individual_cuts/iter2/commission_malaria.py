@@ -24,7 +24,7 @@ iteration = int(re.search(r'iter(\d+)', os.getcwd()).group(1))
 N_rep_per_sample = 1
 N_samples = 200
 params = quick_read( os.path.join('..', 'Params.xlsx'), 'Params').set_index('Name')
-exp_name = 'multisite_singlecuts_Iter%d'%iteration
+exp_name = 'multisite_v9_Matsari_Iter%d'%iteration
 
 
 ##################### Simulation Setup #########################

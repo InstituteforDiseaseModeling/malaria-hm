@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ad6a2df-3cb1-4286-8543-7e84bd4c91f8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_multisite_prevalence.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_multisite_prevalence_plotter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/Cuts/500_4_W2_Sugungum/basis_glm.json" beforeDir="false" afterPath="$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/Cuts/500_4_W2_Sugungum/basis_glm.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/Cuts/500_4_W2_Sugungum/history_matching_config.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/Cuts/500_4_W2_Sugungum/history_matching_config.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/Results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/Results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/Cuts/500_4_W2_Sugungum/GLM/params.p" beforeDir="false" afterPath="$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/Cuts/500_4_W2_Sugungum/GLM/params.p" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/Cuts/500_4_W2_Sugungum/history_matching_config.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/Cuts/500_4_W2_Sugungum/history_matching_config.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/Iter0-Density-Age-Season.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/Iter0-Density-Age-Season.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/Params_7bac51da3efef654c885a1cf0fac989d.hd5" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/Params_7bac51da3efef654c885a1cf0fac989d.hd5" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/analyzers/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/analyzers/COMPS_log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/analyzers/Results_TagsAnalyzer.csv" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/analyzers/Results_TagsAnalyzer.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/analyzers/tags_analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/analyzers/tags_analyzer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/iter0/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/iter0/COMPS_log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/iter0/Iter0-Density-Age-Season.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/iter0/Iter0-Density-Age-Season.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/iter0/PlottingNotebook_PrevalenceByBins.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/iter0/PlottingNotebook_PrevalenceByBins.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/iter0/SampleForNextIteration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/iter0/SampleForNextIteration.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/iter0/Samples.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/iter0/Samples.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v8-multisite/iter0/commission_malaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/v8-multisite/iter0/commission_malaria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/COMPS_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/COMPS_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Iter2-Site_Density-Age-Season.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Iter2-Site_Density-Age-Season.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/PlottingNotebook_PrevalenceByBins.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/PlottingNotebook_PrevalenceByBins.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Results.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Samples.csv" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Samples.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/simtools.ini" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/simtools.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,71 +28,30 @@
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$tags_analyzer.coverage" NAME="tags_analyzer Coverage Results" MODIFIED="1579503664778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$run_malariatherapy_dtk.coverage" NAME="run_malariatherapy_dtk Coverage Results" MODIFIED="1575402587521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../individual-immunity/run_with_python_tools_new_exe" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$Iter0_Density_Age_Season.coverage" NAME="Iter0-Density-Age-Season Coverage Results" MODIFIED="1579561984111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence.coverage" NAME="analyze_hm_multisite_prevalence Coverage Results" MODIFIED="1579643216811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence.coverage" NAME="analyze_hm_multisite_prevalence Coverage Results" MODIFIED="1583358967590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_infection_durations.coverage" NAME="analyze_hm_infection_durations Coverage Results" MODIFIED="1565195618808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v2-addinputEIR_challenge/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_overall.coverage" NAME="analyze_hm_prevalence_overall Coverage Results" MODIFIED="1578605044885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter__1_.coverage" NAME="analyze_hm_multisite_prevalence_plotter (1) Coverage Results" MODIFIED="1579737523526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter__1_.coverage" NAME="analyze_hm_multisite_prevalence_plotter (1) Coverage Results" MODIFIED="1583533116021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_infection_durations__1_.coverage" NAME="analyze_hm_infection_durations (1) Coverage Results" MODIFIED="1565130717320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v1-fixedSF/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$example_download.coverage" NAME="example_download Coverage Results" MODIFIED="1575999473187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/venv/malaria-ug-icemr/examples/Analysis" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$burnin_malaria.coverage" NAME="burnin_malaria Coverage Results" MODIFIED="1565143392508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v2-addinputEIR_challenge/iter0" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$individual_trajectory_analyzer.coverage" NAME="individual_trajectory_analyzer Coverage Results" MODIFIED="1576000695943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../individual-immunity/run_with_new_patient_report" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_age_and_density_bin.coverage" NAME="analyze_hm_prevalence_by_age_and_density_bin Coverage Results" MODIFIED="1578605403200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_density_bin.coverage" NAME="analyze_hm_prevalence_by_density_bin Coverage Results" MODIFIED="1578605343399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__1_.coverage" NAME="commission_malaria (1) Coverage Results" MODIFIED="1579736855138" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__1_.coverage" NAME="commission_malaria (1) Coverage Results" MODIFIED="1583531747598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/iter0" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence__1_.coverage" NAME="analyze_hm_multisite_prevalence (1) Coverage Results" MODIFIED="1579720411876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter.coverage" NAME="analyze_hm_multisite_prevalence_plotter Coverage Results" MODIFIED="1579643895578" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__2_.coverage" NAME="commission_malaria (2) Coverage Results" MODIFIED="1579715029038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v9-multisite_individual_cuts/iter0" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria.coverage" NAME="commission_malaria Coverage Results" MODIFIED="1579731536134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v9-multisite_individual_cuts/iter1" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter.coverage" NAME="analyze_hm_multisite_prevalence_plotter Coverage Results" MODIFIED="1583531691920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$prevalence_by_age_analyzer.coverage" NAME="prevalence_by_age_analyzer Coverage Results" MODIFIED="1580109770059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/gmri_mAbs" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__2_.coverage" NAME="commission_malaria (2) Coverage Results" MODIFIED="1583478166818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/iter0" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria.coverage" NAME="commission_malaria Coverage Results" MODIFIED="1583519659058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/iter1" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence.coverage" NAME="analyze_hm_prevalence Coverage Results" MODIFIED="1578603007900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="HistoryMatching.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../history_matching/history_matching/HistoryMatching.py">
+      <file leaf-file-name="analyze_hm_multisite_prevalence_plotter.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="239" selection-start-line="239" selection-end-line="239" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analyze_hm_multisite_prevalence_plotter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="404">
-              <caret line="194" column="43" selection-start-line="194" selection-start-column="43" selection-end-line="194" selection-end-column="43" />
-              <folding>
-                <element signature="e#0#16#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="glm.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../history_matching/history_matching/glm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="398">
-              <caret line="167" column="48" selection-start-line="167" selection-start-column="48" selection-end-line="167" selection-end-column="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simtools.ini" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v8-multisite/iter1/simtools.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="analyze_hm_multisite_prevalence.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
+            <state relative-caret-position="-1494">
               <caret line="98" column="49" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="49" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -111,13 +61,62 @@
         </entry>
       </file>
       <file leaf-file-name="commission_malaria.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py">
+        <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="135">
+              <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyze_hm_multisite_prevalence_plotter.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="203" column="16" selection-start-line="203" selection-start-column="16" selection-end-line="203" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyze_hm_multisite_prevalence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="327">
+              <caret line="214" column="15" selection-start-line="214" selection-start-column="15" selection-end-line="214" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="analyze_hm_prevalence.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_prevalence.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3194">
+              <folding>
+                <element signature="e#0#16#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="template_config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v11_test_inclusion/InputFiles/template_config.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="simtools.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v11_test_inclusion/iter0/simtools.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -134,7 +133,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>self.name</find>
       <find>demograp</find>
       <find>10</find>
       <find>Disease</find>
@@ -161,6 +159,10 @@
       <find>iteration</find>
       <find>iter</find>
       <find>glm_mode</find>
+      <find>eps</find>
+      <find>pycusa</find>
+      <find>discrep</find>
+      <find>popul</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -169,15 +171,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../history_matching/history_matching/gpr_mo.py" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/analyzers/analyze_hm_prevalence_by_density_bin.py" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/iter0/Iter0-Density-Age-Season.ipynb" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/analyzers/analyze_hm_prevalence_by_age_and_density_bin.py" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/analyzers/tags_analyzer.py" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/analyzers/analyze_hm_prevalence_by_specific_age_and_density_bin.py" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/iter1/simtools.ini" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/iter1/commission_malaria.py" />
-        <option value="$PROJECT_DIR$/v5-Sugungum/iter0/simtools.ini" />
         <option value="$PROJECT_DIR$/v5-Sugungum/InputFiles/config.json" />
         <option value="$PROJECT_DIR$/v5-Sugungum/InputFiles/campaign.json" />
         <option value="$PROJECT_DIR$/v5-Sugungum/analyzers/analyze_hm_prevalence.py" />
@@ -218,8 +211,17 @@
         <option value="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence.py" />
         <option value="$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
         <option value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter1/commission_malaria.py" />
+        <option value="C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/gmri_mAbs/prevalence_by_age_analyzer.py" />
         <option value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py" />
+        <option value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/simtools.ini" />
         <option value="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
+        <option value="$PROJECT_DIR$/v10_singlesite_Sugungum/iter0/commission_malaria.py" />
+        <option value="$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence.py" />
+        <option value="$PROJECT_DIR$/v11_test_inclusion/iter0/commission_malaria.py" />
+        <option value="$PROJECT_DIR$/v11_test_inclusion/iter0/simtools.ini" />
+        <option value="$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
+        <option value="$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py" />
+        <option value="$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
       </list>
     </option>
   </component>
@@ -232,17 +234,18 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="3000" />
-    <option name="y" value="-861" />
-    <option name="width" value="1920" />
-    <option name="height" value="2100" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="3026" />
+    <option name="height" value="1946" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,21 +262,12 @@
               <item name="Malaria-Uganda-PRISM" type="b2602c69:ProjectViewProjectNode" />
               <item name="Malaria-Uganda-PRISM" type="47feb1d3:ProjectViewModuleNode" />
               <item name="Malaria-Uganda-PRISM" type="462c0819:PsiDirectoryNode" />
-              <item name="v9-multisite_individual_cuts" type="462c0819:PsiDirectoryNode" />
+              <item name="v12_restricted_params" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Malaria-Uganda-PRISM" type="b2602c69:ProjectViewProjectNode" />
               <item name="Malaria-Uganda-PRISM" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="Malaria-Uganda-PRISM" type="462c0819:PsiDirectoryNode" />
-              <item name="v9-multisite_individual_cuts" type="462c0819:PsiDirectoryNode" />
-              <item name="analyzers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Malaria-Uganda-PRISM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Malaria-Uganda-PRISM" type="47feb1d3:ProjectViewModuleNode" />
-              <item name="Malaria-Uganda-PRISM" type="462c0819:PsiDirectoryNode" />
-              <item name="v9-multisite_individual_cuts" type="462c0819:PsiDirectoryNode" />
-              <item name="iter1" type="462c0819:PsiDirectoryNode" />
+              <item name="malaria-ug-icemr" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Malaria-Uganda-PRISM" type="b2602c69:ProjectViewProjectNode" />
@@ -301,14 +295,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="to_json&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="histor&#9;FILE&#9;file://C:/git/history_matching/history_matching/HistoryMatching.py&#10;to_json&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="C:/OneDrive - IDMOD/malaria-ug-icemr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../mmc_benchmarking/eir_vs_pfpr" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -352,25 +345,6 @@
       <option name="ipnbHost" value="127.0.0.1" />
       <option name="ipnbPort" value="8888" />
     </configuration>
-    <configuration name="analyze_hm_multisite_prevalence (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Malaria-Uganda-PRISM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="analyze_hm_multisite_prevalence_plotter (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Malaria-Uganda-PRISM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -379,12 +353,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v12_restricted_params/analyzers" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="analyze_hm_multisite_prevalence_plotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Malaria-Uganda-PRISM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -398,12 +391,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v12_restricted_params/iter0" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -417,12 +410,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v11_test_inclusion/iter0" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter0/commission_malaria.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v11_test_inclusion/iter0/commission_malaria.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -436,12 +429,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v11_test_inclusion/iter1" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v9-multisite_individual_cuts/iter1/commission_malaria.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v11_test_inclusion/iter1/commission_malaria.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -450,17 +443,17 @@
     <list>
       <item itemvalue="Jupyter Notebook.Malaria-Uganda-PRISM" />
       <item itemvalue="Python.commission_malaria (2)" />
-      <item itemvalue="Python.analyze_hm_multisite_prevalence (1)" />
-      <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter (1)" />
+      <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter" />
       <item itemvalue="Python.commission_malaria" />
       <item itemvalue="Python.commission_malaria (1)" />
+      <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter (1)" />
         <item itemvalue="Python.commission_malaria (1)" />
+        <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter" />
         <item itemvalue="Python.commission_malaria" />
-        <item itemvalue="Python.analyze_hm_multisite_prevalence (1)" />
         <item itemvalue="Python.commission_malaria (2)" />
       </list>
     </recent_temporary>
@@ -479,23 +472,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5024055" side_tool="true" visible="true" weight="0.45704058" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4975945" visible="true" weight="0.45704058" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32994527" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29952267" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49896908" weight="0.3293556" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32681784" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19037801" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25704467" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.0" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.38961038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49965635" weight="0.26849642" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4112588" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -504,29 +497,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32994527" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.18217358" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13200796" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.44566068" />
-      <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32994527" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="right" id="SciView" order="3" weight="0.4250497" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32994527" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32994527" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -690,6 +660,21 @@
           <line>154</line>
           <option name="timeStamp" value="143" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url />
+          <line>82</line>
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url />
+          <line>47</line>
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py</url>
+          <line>201</line>
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -698,11 +683,21 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="147" />
+      <option name="time" value="153" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>re.search(r'iter(\d+)', os.getcwd())</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string />
+        <language-id>Python</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string />
         <language-id>Python</language-id>
@@ -738,16 +733,6 @@
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>len(list(seasons))</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>len(age_bins)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="breakpointCondition">
       <expression>
@@ -758,205 +743,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/dtk/utils/builders/BaseTemplate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="100" column="15" selection-start-line="100" selection-start-column="15" selection-end-line="100" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v7-Sugungum - binnedcuts/InputFiles/campaign.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" lean-forward="true" selection-end-line="22" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/dtk-tools-malaria/malaria/study_sites/GarkiSites.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1352" />
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/dtk-tools-malaria/malaria/study_sites/site_setup_functions.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/dtk-tools-malaria/malaria/site/input_EIR_by_site.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://C:/Python36/Lib/typing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="2323" column="8" selection-start-line="2323" selection-start-column="8" selection-end-line="2323" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/malaria-_VERSION_-py3.6.egg/malaria/reports/MalariaReport.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="45" column="4" selection-start-line="45" selection-start-column="4" selection-end-line="45" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/dtk/utils/builders/TaggedTemplate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="211" column="34" selection-start-line="211" selection-start-column="34" selection-end-line="211" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/ntpath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="75" selection-start-line="75" selection-end-line="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/dtk/interventions/empty_campaign.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v8-multisite/InputFiles/config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="84" column="41" selection-start-line="84" selection-start-column="41" selection-end-line="84" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/dtk/utils/builders/TemplateHelper.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="77" selection-start-line="77" selection-end-line="77" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36/Lib/multiprocessing/process.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="257" selection-start-line="257" selection-end-line="257" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/simtools/SimConfigBuilder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="82" selection-start-line="82" selection-end-line="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/dtk/utils/Campaign/utils/BaseCampaign.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="60" selection-start-line="60" selection-end-line="66" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/dtk/utils/core/DTKConfigBuilder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8398">
-          <caret line="530" selection-start-line="530" selection-end-line="530" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/simtools/SimulationCreator/BaseSimulationCreator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/simtools/SimulationCreator/COMPSSimulationCreator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_prevalence_by_specific_age_and_density_bin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2811" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_prevalence_by_density_bin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="54" column="26" lean-forward="true" selection-start-line="54" selection-start-column="26" selection-end-line="54" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_prevalence_overall.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2601">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_prevalence_by_age_and_density_bin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v7-Sugungum - binnedcuts/iter0/commission_malaria.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-986">
-          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/add_inputEIR_framework/commission_addinputEIR_sims.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-714" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v6-Sugungum - wideParams/iter0/commission_malaria.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1317">
-          <caret line="149" lean-forward="true" selection-start-line="149" selection-end-line="149" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_prevalence.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="204" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://C:/Python36/Lib/multiprocessing/pool.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="107" selection-start-line="107" selection-end-line="107" />
         </state>
       </provider>
     </entry>
@@ -974,9 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="455">
           <caret line="49" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#0#56#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1004,9 +791,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="438">
           <caret line="151" selection-start-line="151" selection-end-line="151" />
-          <folding>
-            <element signature="e#408#449#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,9 +812,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="369">
           <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1045,9 +826,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1082,30 +860,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/iter0/commission_malaria.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="298" column="95" selection-start-line="298" selection-start-column="95" selection-end-line="298" selection-end-column="95" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_multisite_prevalence_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
           <caret line="201" column="17" selection-start-line="201" selection-start-column="17" selection-end-line="201" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../history_matching/history_matching/HistoryMatching.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="239" selection-start-line="239" selection-end-line="239" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1120,26 +878,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="98" column="49" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/gmri_mAbs/run_with_interventions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/venv/malaria-ug-icemr/Lib/site-packages/simtools/Analysis/DataRetrievalProcess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Python36/Lib/multiprocessing/pool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/gmri_mAbs/prevalence_by_age_analyzer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1479">
+          <caret line="91" column="22" selection-start-line="91" selection-start-column="22" selection-end-line="91" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/IDM/DtkTrunk/Regression/regression_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="119" column="52" selection-start-line="119" selection-start-column="52" selection-end-line="119" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/IDM/DtkTrunk/Regression/Malaria/79_Malaria_Transmission_Tracking/dtk_pre_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v10_singlesite_Sugungum/iter0/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="33" selection-end-line="55" selection-end-column="33" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence.py">
+    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/iter0/commission_malaria.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="98" column="49" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="49" />
+        <state relative-caret-position="646">
+          <caret line="233" column="48" selection-start-line="233" selection-start-column="48" selection-end-line="233" selection-end-column="48" />
           <folding>
-            <element signature="e#0#16#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py">
+    <entry file="file://$PROJECT_DIR$/v10_singlesite_Matsari/iter0/commission_malaria.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="756">
+          <caret line="202" column="36" selection-start-line="202" selection-start-column="36" selection-end-line="202" selection-end-column="36" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1148,8 +965,157 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="194" column="43" selection-start-line="194" selection-start-column="43" selection-end-line="194" selection-end-column="43" />
+        <state relative-caret-position="255">
+          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="32" column="72" selection-start-line="32" selection-start-column="72" selection-end-line="32" selection-end-column="72" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/inter_model_comparison/comparison_analyzers/prevalence/analyze_prevalence_by_EIR.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/simtools.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v10_singlesite_Sugungum/iter0/simtools.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/InputFiles/config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-357" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/InputFiles/template_config.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_prevalence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3194">
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/iter0/Iter0-Density-Age-Season.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../history_matching/history_matching/gpr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="804" column="28" selection-start-line="804" selection-start-column="28" selection-end-line="804" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Measles-Nigeria-Subnational-Eradication-Scenarios/HistoryMatching/v2-ExtraDimensions/iter0/Seasonality.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../Measles-Nigeria-Subnational-Eradication-Scenarios/HistoryMatching/v2-ExtraDimensions/iter0/AgeDist.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="327">
+          <caret line="214" column="15" selection-start-line="214" selection-start-column="15" selection-end-line="214" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/iter0/simtools.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/iter0/SampleForNextIteration.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/iter1/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../history_matching/history_matching/HistoryMatching.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-231">
+          <caret line="529" column="83" selection-start-line="529" selection-start-column="76" selection-end-line="529" selection-end-column="83" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/iter0/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3859">
+          <caret line="236" column="35" selection-start-line="236" selection-start-column="35" selection-end-line="236" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1494">
+          <caret line="98" column="49" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="203" column="16" selection-start-line="203" selection-start-column="16" selection-end-line="203" selection-end-column="16" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
