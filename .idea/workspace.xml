@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4ad6a2df-3cb1-4286-8543-7e84bd4c91f8" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Candidates_for_iter1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Candidates_for_iter1.hd5" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Candidates_for_iter1_stats.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/GPR/emulation.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/GPR/gpr.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/GPR/histogram.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/GPR/model_with_test_data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/Implausibility/implausibility.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/test_data.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/train_data.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/COMPS_log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers/analyze_hm_multisite_prevalence_plotter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/COMPS_log.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Iter2-Site_Density-Age-Season.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Iter2-Site_Density-Age-Season.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/PlottingNotebook_PrevalenceByBins.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/PlottingNotebook_PrevalenceByBins.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Samples.csv" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/Samples.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/commission_malaria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/simtools.ini" beforeDir="false" afterPath="$PROJECT_DIR$/v9-multisite_individual_cuts/iter2/simtools.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v12_restricted_params/analyzers/COMPS_log.log" beforeDir="false" afterPath="$PROJECT_DIR$/v12_restricted_params/analyzers/COMPS_log.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/GPR/model.json" beforeDir="false" afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Cuts/50_8_W2_Sugungum/GPR/model.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v12_restricted_params/iter0/Iter0-Density-Age-Season.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/Iter0-Density-Age-Season.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/v12_restricted_params/iter0/SampleForNextIteration.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/v12_restricted_params/iter0/SampleForNextIteration.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,29 +27,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_specific_age_and_density_bin.coverage" NAME="analyze_hm_prevalence_by_specific_age_and_density_bin Coverage Results" MODIFIED="1573596976237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v6-Sugungum - wideParams/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence__1_.coverage" NAME="analyze_hm_prevalence (1) Coverage Results" MODIFIED="1574198252574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v6-Sugungum - wideParams/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$run_malariatherapy_dtk__1_.coverage" NAME="run_malariatherapy_dtk (1) Coverage Results" MODIFIED="1575754587964" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../individual-immunity/run_with_new_patient_report" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$Malaria_Uganda_PRISM.coverage" NAME="Malaria-Uganda-PRISM Coverage Results" MODIFIED="1565028845792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$tags_analyzer.coverage" NAME="tags_analyzer Coverage Results" MODIFIED="1579503664778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$run_malariatherapy_dtk.coverage" NAME="run_malariatherapy_dtk Coverage Results" MODIFIED="1575402587521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../individual-immunity/run_with_python_tools_new_exe" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$Iter0_Density_Age_Season.coverage" NAME="Iter0-Density-Age-Season Coverage Results" MODIFIED="1579561984111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/Downloads" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence.coverage" NAME="analyze_hm_multisite_prevalence Coverage Results" MODIFIED="1583358967590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_infection_durations.coverage" NAME="analyze_hm_infection_durations Coverage Results" MODIFIED="1565195618808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v2-addinputEIR_challenge/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_overall.coverage" NAME="analyze_hm_prevalence_overall Coverage Results" MODIFIED="1578605044885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter__1_.coverage" NAME="analyze_hm_multisite_prevalence_plotter (1) Coverage Results" MODIFIED="1583533116021" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_infection_durations__1_.coverage" NAME="analyze_hm_infection_durations (1) Coverage Results" MODIFIED="1565130717320" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v1-fixedSF/analyzers" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$example_download.coverage" NAME="example_download Coverage Results" MODIFIED="1575999473187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/venv/malaria-ug-icemr/examples/Analysis" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$burnin_malaria.coverage" NAME="burnin_malaria Coverage Results" MODIFIED="1565143392508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v2-addinputEIR_challenge/iter0" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__3_.coverage" NAME="commission_malaria (3) Coverage Results" MODIFIED="1583550924879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/iter1" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$individual_trajectory_analyzer.coverage" NAME="individual_trajectory_analyzer Coverage Results" MODIFIED="1576000695943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../individual-immunity/run_with_new_patient_report" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_age_and_density_bin.coverage" NAME="analyze_hm_prevalence_by_age_and_density_bin Coverage Results" MODIFIED="1578605403200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_density_bin.coverage" NAME="analyze_hm_prevalence_by_density_bin Coverage Results" MODIFIED="1578605343399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__1_.coverage" NAME="commission_malaria (1) Coverage Results" MODIFIED="1583531747598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/iter0" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence__1_.coverage" NAME="analyze_hm_multisite_prevalence (1) Coverage Results" MODIFIED="1579720411876" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v9-multisite_individual_cuts/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter.coverage" NAME="analyze_hm_multisite_prevalence_plotter Coverage Results" MODIFIED="1583531691920" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_specific_age_and_density_bin.coverage" NAME="analyze_hm_prevalence_by_specific_age_and_density_bin Coverage Results" MODIFIED="1573596976237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v6-Sugungum - wideParams/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$Malaria_Uganda_PRISM.coverage" NAME="Malaria-Uganda-PRISM Coverage Results" MODIFIED="1565028845792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$tags_analyzer.coverage" NAME="tags_analyzer Coverage Results" MODIFIED="1579503664778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$run_malariatherapy_dtk.coverage" NAME="run_malariatherapy_dtk Coverage Results" MODIFIED="1575402587521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../individual-immunity/run_with_python_tools_new_exe" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence.coverage" NAME="analyze_hm_multisite_prevalence Coverage Results" MODIFIED="1583358967590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_overall.coverage" NAME="analyze_hm_prevalence_overall Coverage Results" MODIFIED="1578605044885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_multisite_prevalence_plotter__1_.coverage" NAME="analyze_hm_multisite_prevalence_plotter (1) Coverage Results" MODIFIED="1583632393928" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/analyzers" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$example_download.coverage" NAME="example_download Coverage Results" MODIFIED="1575999473187" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/venv/malaria-ug-icemr/examples/Analysis" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$burnin_malaria.coverage" NAME="burnin_malaria Coverage Results" MODIFIED="1565143392508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v2-addinputEIR_challenge/iter0" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence_by_age_and_density_bin.coverage" NAME="analyze_hm_prevalence_by_age_and_density_bin Coverage Results" MODIFIED="1578605403200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$prevalence_by_age_analyzer.coverage" NAME="prevalence_by_age_analyzer Coverage Results" MODIFIED="1580109770059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="C:/OneDrive - IDMOD/malaria-ug-icemr/Malaria2pt0/gmri_mAbs" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__2_.coverage" NAME="commission_malaria (2) Coverage Results" MODIFIED="1583478166818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/iter0" />
-    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria.coverage" NAME="commission_malaria Coverage Results" MODIFIED="1583519659058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v11_test_inclusion/iter1" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria__2_.coverage" NAME="commission_malaria (2) Coverage Results" MODIFIED="1583631596346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v12_restricted_params/iter2" />
+    <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$commission_malaria.coverage" NAME="commission_malaria Coverage Results" MODIFIED="1583633921022" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v13_fullparams_Sugungum/iter0" />
     <SUITE FILE_PATH="coverage/Malaria_Uganda_PRISM$analyze_hm_prevalence.coverage" NAME="analyze_hm_prevalence Coverage Results" MODIFIED="1578603007900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/v8-multisite/analyzers" />
   </component>
   <component name="FileEditorManager">
@@ -51,7 +58,7 @@
       <file leaf-file-name="analyze_hm_multisite_prevalence_plotter.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1494">
+            <state relative-caret-position="-1480">
               <caret line="98" column="49" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="49" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
@@ -61,10 +68,10 @@
         </entry>
       </file>
       <file leaf-file-name="commission_malaria.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py">
+        <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter2/commission_malaria.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
+            <state relative-caret-position="323">
+              <caret line="331" selection-start-line="331" selection-end-line="331" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -75,11 +82,20 @@
       <file leaf-file-name="analyze_hm_multisite_prevalence_plotter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="203" column="16" selection-start-line="203" selection-start-column="16" selection-end-line="203" selection-end-column="16" />
+            <state relative-caret-position="325">
+              <caret line="202" column="61" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="61" />
               <folding>
                 <element signature="e#0#16#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="commission_malaria.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter1/commission_malaria.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -171,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/v5-Sugungum/InputFiles/config.json" />
         <option value="$PROJECT_DIR$/v5-Sugungum/InputFiles/campaign.json" />
         <option value="$PROJECT_DIR$/v5-Sugungum/analyzers/analyze_hm_prevalence.py" />
         <option value="$PROJECT_DIR$/v5-Sugungum/iter0/commission_malaria.py" />
@@ -221,6 +236,7 @@
         <option value="$PROJECT_DIR$/v11_test_inclusion/iter0/simtools.ini" />
         <option value="$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
         <option value="$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py" />
+        <option value="$PROJECT_DIR$/v12_restricted_params/iter2/commission_malaria.py" />
         <option value="$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
       </list>
     </option>
@@ -327,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.analyze_hm_multisite_prevalence_plotter (1)">
+  <component name="RunManager" selected="Python.commission_malaria">
     <configuration name="Malaria-Uganda-PRISM" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="Malaria-Uganda-PRISM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -364,25 +380,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="analyze_hm_multisite_prevalence_plotter" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Malaria-Uganda-PRISM" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v11_test_inclusion/analyzers" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="commission_malaria (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Malaria-Uganda-PRISM" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -410,12 +407,31 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v11_test_inclusion/iter0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v12_restricted_params/iter2" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v11_test_inclusion/iter0/commission_malaria.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v12_restricted_params/iter2/commission_malaria.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="commission_malaria (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Malaria-Uganda-PRISM" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v12_restricted_params/iter1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v12_restricted_params/iter1/commission_malaria.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -429,12 +445,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v11_test_inclusion/iter1" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/v13_fullparams_Sugungum/iter0" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v11_test_inclusion/iter1/commission_malaria.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/v13_fullparams_Sugungum/iter0/commission_malaria.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -442,19 +458,19 @@
     </configuration>
     <list>
       <item itemvalue="Jupyter Notebook.Malaria-Uganda-PRISM" />
-      <item itemvalue="Python.commission_malaria (2)" />
-      <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter" />
-      <item itemvalue="Python.commission_malaria" />
       <item itemvalue="Python.commission_malaria (1)" />
       <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter (1)" />
+      <item itemvalue="Python.commission_malaria (3)" />
+      <item itemvalue="Python.commission_malaria (2)" />
+      <item itemvalue="Python.commission_malaria" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter (1)" />
-        <item itemvalue="Python.commission_malaria (1)" />
-        <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter" />
         <item itemvalue="Python.commission_malaria" />
+        <item itemvalue="Python.analyze_hm_multisite_prevalence_plotter (1)" />
         <item itemvalue="Python.commission_malaria (2)" />
+        <item itemvalue="Python.commission_malaria (3)" />
+        <item itemvalue="Python.commission_malaria (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -472,7 +488,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1513" height="973" extended-state="6" />
+    <frame x="-6" y="-6" width="1513" height="973" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -689,7 +705,7 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>re.search(r'iter(\d+)', os.getcwd())</expression-string>
+        <expression-string />
         <language-id>Python</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -743,16 +759,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/analyze_hm_prevalence.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="204" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/v8-multisite/analyzers/Results_TagsAnalyzer.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/v8-multisite/iter0/Iter0-Density-Age-Season.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -1092,10 +1098,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter1/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter0/commission_malaria.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="323" column="37" selection-start-line="323" selection-start-column="37" selection-end-line="323" selection-end-column="37" />
+        <state relative-caret-position="136">
+          <caret line="23" column="20" lean-forward="true" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -1104,7 +1117,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/v11_test_inclusion/analyzers/analyze_hm_multisite_prevalence_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1494">
+        <state relative-caret-position="-1480">
           <caret line="98" column="49" selection-start-line="98" selection-start-column="42" selection-end-line="98" selection-end-column="49" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
@@ -1112,10 +1125,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/v12_restricted_params/iter2/commission_malaria.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="331" selection-start-line="331" selection-end-line="331" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/v12_restricted_params/analyzers/analyze_hm_multisite_prevalence_plotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="203" column="16" selection-start-line="203" selection-start-column="16" selection-end-line="203" selection-end-column="16" />
+        <state relative-caret-position="325">
+          <caret line="202" column="61" selection-start-line="202" selection-start-column="25" selection-end-line="202" selection-end-column="61" />
           <folding>
             <element signature="e#0#16#0" expanded="true" />
           </folding>
