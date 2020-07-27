@@ -200,5 +200,5 @@ class Summary_Prevalence_Analyzer(BaseAnalyzer):
 
 if __name__ == '__main__':
     iteration = 2
-    am = AnalyzeManager('7d95a4cd-dd60-ea11-a2c5-c4346bcb1550',analyzers=Summary_Prevalence_Analyzer(iteration = iteration))
+    am = AnalyzeManager('fcb26538-f162-ea11-a2c5-c4346bcb1550',analyzers=Summary_Prevalence_Analyzer(iteration = iteration))
     am.analyze()
